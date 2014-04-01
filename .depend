@@ -1,0 +1,4 @@
+main.o: main.cpp Simulador.h SubSecuencia.h Parentizacion.h
+Simulador.o: Simulador.cpp Simulador.h SubSecuencia.h Parentizacion.h
+Parentizacion.o: Parentizacion.cpp Parentizacion.h
+SubSecuencia.o: SubSecuencia.cpp SubSecuencia.h
