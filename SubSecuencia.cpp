@@ -36,8 +36,13 @@ SubSecuencia::~SubSecuencia() {
 	_tabla = NULL;
 }
 
+
+
+
+
+//Calculos 
 void SubSecuencia::mostrarTabla() {
-	cout << " Tabla resultado de la Programación Dinámica: " << endl << endl;
+	cout << "********* Tabla resultado ********* " << endl << endl;
 	cout << " \t";
 	for (unsigned int j = 0; j < _cad1.length(); ++j)
 		cout << "\t" << _cad1[j];

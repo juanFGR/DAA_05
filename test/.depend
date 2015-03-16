@@ -1,0 +1,4 @@
+UnitTestCase.o: UnitTestCase.cpp UnitTestCase.h ../SubSecuencia.h \
+ ../Simulador.h ../SubSecuencia.h
+SubSecuencia.o: ../SubSecuencia.cpp ../SubSecuencia.h
+Simulador.o: ../Simulador.cpp ../Simulador.h ../SubSecuencia.h

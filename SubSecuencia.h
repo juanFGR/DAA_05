@@ -19,7 +19,7 @@ public:
 	void mostrarTabla ();
 	void subSecComunMasLarga ();
 
-private:
+public:
 	int** _tabla;
 	int nFilas;
 	int nCols;

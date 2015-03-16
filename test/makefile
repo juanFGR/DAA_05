@@ -1,19 +1,24 @@
 CC=gcc
 CXX=g++
+INCLUDES= -I./
+CXXFLAGS = -g $(INCLUDES)
+
 RM=rm -f
 CFLAGS=-g -O2
 LDFLAGS=-g -O2
+LINKFLAGS= -lcppunit
 
-SIMULADOR=Simulador.cpp
-SUBSECUENCIA=SubSecuencia.cpp
 
-SRCS=main.cpp $(SIMULADOR) $(SUBSECUENCIA)
+EXAMPLE_SRS=../SubSecuencia.cpp
+FRAMEWORK=../Simulador.cpp
+
+SRCS=UnitTestCase.cpp $(EXAMPLE_SRS) $(FRAMEWORK)
 OBJS=$(subst .cpp,.o,$(SRCS))
 
 all: main
 
 main: $(OBJS)
-	$(CXX) $(LDFLAGS) -o main $(OBJS) 
+	$(CXX) $(LDFLAGS) -o main $(OBJS) $(LINKFLAGS) $(LINKFLAGSLOG4) $(LIBLOG)
 
 depend: .depend
 

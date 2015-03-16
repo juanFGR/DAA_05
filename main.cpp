@@ -10,12 +10,9 @@ using namespace std;
 
 #include "Simulador.h"
 
-int main() {
-	int dim [5] = {10, 100, 5, 50, 1 };
-
-	Simulador* simul = new Simulador ("ACGTGCATGGAAGTCAAGTCCAGTCACTGAAAGGTCGATACTGACTAAGGCCT", "ACTGAGAATTCCGATCAGACGTCACTGAAAGGTCGATACTGACTAAAAGTCCT");
+int main(int argc, char *argv[]) {	
+Simulador* simul = new Simulador (argv[1],argv[2]);
 	simul -> interfazAlgoritmo();
-	simul = new Simulador (dim, 5);
-	simul -> interfazAlgoritmo();
+	cout<<endl;
 	return 0;
 }
